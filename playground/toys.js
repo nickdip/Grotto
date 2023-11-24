@@ -19,11 +19,11 @@ class childLetter {
 
             Object.keys(this.toyData).forEach(category => {
 
-                if (word === category) {
+                if (word === category || word + "s" === category) {
                     this.favCategories[category] += 1
                     matches.push(word)
                 } 
-                else if (this.toyData[category].includes(word)) {
+                else if (this.toyData[category].includes(word) || this.toyData[category].includes(word + "s")) {
                     this.favCategories[category] += 1
                     matches.push(word)
                 }
@@ -53,8 +53,9 @@ class childLetter {
 }
 
 
-const child1 = new childLetter("I want a doll and a car for christmas!")
+const child1 = new childLetter("I want a bicycle for christmas!")
 
 child1.getToys()
 child1.getTypoToys()
 child1.showToys()
+console.log(child1.favCategories)
