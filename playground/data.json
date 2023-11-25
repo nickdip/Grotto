@@ -391,12 +391,13 @@
         "Image link": "",
         "Price": 50.99,
         "Description": "This bicycle is a fun and educational toy for kids, perfect for imaginative play and skill development.",
-        "Sustainability": "recycled",
+        "Sustainability": "second hand",
         "words": [
             "bicycle",
             "bike",
             "bikes",
-            "cycling"
+            "cycling",
+            "cycle"
         ]
     },
     {
@@ -620,7 +621,8 @@
         "Sustainability": "B Corp",
         "words": [
             "dollhouse",
-            "dollhouses"
+            "dollhouses",
+            "doll"
         ]
     },
     {
