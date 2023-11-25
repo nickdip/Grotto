@@ -27,19 +27,17 @@ const DbPractice = () => {
 
   return (
     <div className="page dbpractice">
-      <h1>MY PRACTICE PAGE</h1>
+      <div>
+        {fetchError && <p>{fetchError}</p>}
+        {toys && (
+          <div className="toys">
+            {toys.map((toy) => (
+              <p key={toy.id}>{toy.name}</p>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
-
-    // <div className="page dbpractice">
-    //   {fetchError && <p>{fetchError}</p>}
-    //   {toys} && (
-    //   <div className="toys">
-    //     {toys.map((toy) => (
-    //       <p>{toy.name}</p>
-    //     ))}
-    //   </div>
-    //   )
-    // </div>
   );
 };
 
