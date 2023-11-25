@@ -3,13 +3,26 @@ import { useEffect, useState } from "react";
 
 const DbPractice = () => {
   console.log(supabase);
+
+  const [toys, setToys] = useState([]);
+
+  useEffect(() => {
+    fetchToys();
+  }, []);
+
+  async function fetchToys() {
+    const { data } = await supabase.from("toys").select();
+    setToys(data);
+    console.log(data);
+  }
+
   // const [fetchError, setFetchError] = useState(null);
   // const [toys, setToys] = useState(null);
 
   // useEffect(() => {
   //   const fetchToys = async () => {
   //     const { data, error } = await supabase.from("toys").select();
-
+  //     console.log(error);
   //     if (error) {
   //       setFetchError("Could not fetch the toys");
   //       setToys(null);
@@ -19,6 +32,7 @@ const DbPractice = () => {
   //       setToys(data);
   //       setFetchError(null);
   //     }
+  //     console.log(toys);
   //   };
   //   fetchToys();
   // }, []);
