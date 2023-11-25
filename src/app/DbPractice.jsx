@@ -2,8 +2,9 @@ import supabase from "../../config/supabaseClient";
 import { useEffect, useState } from "react";
 
 const DbPractice = () => {
-  console.log(supabase);
+  // console.log(supabase);
 
+  const [fetchError, setFetchError] = useState(null);
   const [toys, setToys] = useState([]);
 
   useEffect(() => {
@@ -11,31 +12,19 @@ const DbPractice = () => {
   }, []);
 
   async function fetchToys() {
-    const { data } = await supabase.from("toys").select();
-    setToys(data);
-    console.log(data);
+    const { data, error } = await supabase.from("toys").select();
+
+    if (error) {
+      setFetchError("Could not fetch the toys");
+      setToys(null);
+      console.log(error);
+    }
+    if (data) {
+      setToys(data);
+      console.log(data);
+    }
   }
 
-  // const [fetchError, setFetchError] = useState(null);
-  // const [toys, setToys] = useState(null);
-
-  // useEffect(() => {
-  //   const fetchToys = async () => {
-  //     const { data, error } = await supabase.from("toys").select();
-  //     console.log(error);
-  //     if (error) {
-  //       setFetchError("Could not fetch the toys");
-  //       setToys(null);
-  //       console.log(error);
-  //     }
-  //     if (data) {
-  //       setToys(data);
-  //       setFetchError(null);
-  //     }
-  //     console.log(toys);
-  //   };
-  //   fetchToys();
-  // }, []);
   return (
     <div className="page dbpractice">
       <h1>MY PRACTICE PAGE</h1>
