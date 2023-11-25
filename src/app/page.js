@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { data } from "@/data";
+import DbPractice from "./DbPractice";
 
 export default function Home() {
   return (
@@ -9,12 +12,15 @@ export default function Home() {
           <span className="mt-2 block text-left text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
             {data.Landing.heading.first}
             <br />
-            <span className="text-green-700 text-3xl">{data.Landing.heading.second}</span>
+            <span className="text-green-700 text-3xl">
+              {data.Landing.heading.second}
+            </span>
           </span>
         </h1>
         <p className="mt-8 text-lg text-left leading-8 text-gray-500 sm:text-xl lg:text-2xl">
           {data.Landing.intro}
         </p>
+        <DbPractice />
       </div>
       <div className="bg-transparent pt-4">
         <Image
