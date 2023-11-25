@@ -1,5 +1,5 @@
 
-const fs = require('fs')
+const fs = require('fs');
 
 const toyData = JSON.parse(fs.readFileSync('./data.json', 'utf8'))
 

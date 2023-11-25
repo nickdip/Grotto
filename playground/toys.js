@@ -2,75 +2,94 @@ const toyData = require('./toyData.js');
 const natural = require('natural')
 const ignoredWords = require('./ignoreWords.js')
 
-class childLetter {
-    constructor(str) {
-        this.words = this.findKeyWords(new natural.WordTokenizer().tokenize(str))
-        this.toyData = toyData,
-        this.favCategories = {},
-        this.possibleToys = {"Primary": [], "Secondary": []}
-        this.secondaryWords = []
-    }
 
-    getToys(isPrimary) {
+function getResults(str) {
 
-        const words = isPrimary ? this.words : this.secondaryWords
+        const resultObj = {"faveCategories": {}}
 
-        const matches = []
-        words.forEach(word => {
+        const words = findKeyWords(new natural.WordTokenizer().tokenize(str))
 
-            if (ignoredWords.includes(word)) return
+        const seen = [] // seen toys
 
-
-            console.log(word)
-
-            this.toyData.forEach(toy => {
-
-
-
-
-                if (word === toy.Category) {
-                    this.favCategories[toy.Category] = this.favCategories[toy.Category] + 1 || 1
-                }
-
-                if (toy.words.includes(word)) {
-                    this.favCategories[toy.Category] = this.favCategories[toy.Category] + 1 || 1
-                    if (!(matches.includes(toy) || this.possibleToys.Primary.includes(toy) || this.possibleToys.Secondary.includes(toy) )) matches.push(toy)
-                }
-        })})
-
-        if (isPrimary) this.possibleToys.Primary = matches
-        else this.possibleToys.Secondary = matches
+        const getTypoToys = () => {
+            const secondaryMatches = []
     
-    }
-
-    getTypoToys() {
-        const secondaryMatches = []
-
-        let allWords = []
-
-        for (let toy in this.toyData) {
-            for (let word in this.toyData[toy].words) {
-                allWords.push(this.toyData[toy].words[word])
+            let allWords = []
+    
+            for (let toy in toyData) {
+                for (let word in toyData[toy].words) {
+                    allWords.push(toyData[toy].words[word])
+                }
             }
+
+            const spellcheck = new natural.Spellcheck(allWords)
+            words.forEach(wordInText => {
+                spellcheck.getCorrections(wordInText, 1).forEach(correction => {
+                    if (!(correction === wordInText && secondaryMatches.includes(correction))) secondaryMatches.push(correction)
+                })
+            })
+
+            return secondaryMatches
         }
 
+        const getMatches = (rank, words) => {
 
+            const matches = []
 
-        const spellcheck = new natural.Spellcheck(allWords)
-        this.words.forEach(wordInText => {
-            spellcheck.getCorrections(wordInText, 1).forEach(correction => {
-                if (correction !== wordInText && secondaryMatches.includes(correction)) this.secondaryWords.push(correction)
-            })
-        })
+                words.forEach(word => {
+
+                    if (ignoredWords.includes(word)) return
+
         
-        this.getToys(false)
+                    toyData.forEach(toy => {
+
+                        if (word === toy.Category) resultObj.faveCategories[toy.Category] = resultObj.faveCategories[toy.Category] + 1 || 1
+        
+                        if (toy.words.includes(word)) {
+                            resultObj.faveCategories[toy.Category] = resultObj.faveCategories[toy.Category] + 1 || 1
+                            if (!(seen.includes(toy))) {
+                                matches.push(toy)
+                                seen.push(toy)
+                            }
+                        }
+                })})
+
+                resultObj[rank] = matches
+        }
+
+        getMatches("Primary", words)
+        getMatches("Secondary", getTypoToys())
+
+
+        const finalResults = [] // final results (show up to 8)
+
+        for (let i = 0; i < 4; i++) {
+            if (resultObj.Primary[i]) finalResults.push(resultObj.Primary[i])
+            if (resultObj.Secondary[i]) finalResults.push(resultObj.Secondary[i])
+        }
+
+        if (finalResults.length < 4) {
+
+            const faveCategories = Object.keys(resultObj.faveCategories).sort((a, b) => resultObj.faveCategories[b] - resultObj.faveCategories[a])
+
+            faveCategories.forEach(category => {
+    
+                toyData.forEach(toy => {
+                    if (toy.Category === category && !(finalResults.includes(toy))) finalResults.push(toy)
+                })})
+            
+        }
+
+        while (finalResults.length < 4) {
+            finalResults.push(toyData[Math.floor(Math.random() * toyData.length)])
+        }
+
+        return finalResults.slice(0, 4)
+
     }
 
-    showToys() {
-        console.log(this.possibleToys)
-    }
 
-    findKeyWords(wordsArray) {
+function findKeyWords(wordsArray) {
         const keyWords = []
         wordsArray.forEach(word => {
             if (!ignoredWords.includes(word)) keyWords.push(word)
@@ -78,14 +97,9 @@ class childLetter {
         return keyWords
 
     }
-    
-}
-
-const child1 = new childLetter("I want a bicycle for christmas!");
 
 
-child1.getToys(child1.words)
-child1.getTypoToys()
-child1.showToys()
-console.log(child1.favCategories)
+const child1 = getResults("I want nothing for christmas")
+
+export default getResults
 
