@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { data } from "@/data";
 
 export const Navbar = () => {
   const selectedClass =
@@ -9,15 +10,15 @@ export const Navbar = () => {
 
   return (
     <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-      <Link className={selectedClass} href="/">
-        Home
-      </Link>
-      <Link href="/" className={nonSelectedClass}>
-        Services
-      </Link>
-      <Link href="/" className={nonSelectedClass}>
-        Pricing
-      </Link>
+      {data.Navbar.map((navElement) => (
+        <Link
+          key={navElement.name}
+          className={navElement.isSelected ? selectedClass : nonSelectedClass}
+          href={navElement.href}
+        >
+          {navElement.name}
+        </Link>
+      ))}
     </div>
   );
 };
