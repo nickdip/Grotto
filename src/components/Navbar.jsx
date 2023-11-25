@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { data } from "@/data";
+import { useIsPathActive } from "@/hooks";
 
 export const Navbar = () => {
+  const navbar = useIsPathActive();
   const selectedClass =
     "inline-flex items-center border-b-2 border-green-700 px-1 pt-1 text-lg font-medium text-gray-900";
   const nonSelectedClass =
@@ -10,7 +11,7 @@ export const Navbar = () => {
 
   return (
     <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-      {data.Navbar.map((navElement) => (
+      {navbar.map((navElement) => (
         <Link
           key={navElement.name}
           className={navElement.isSelected ? selectedClass : nonSelectedClass}

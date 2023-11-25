@@ -14,13 +14,17 @@ export const data = {
       isSelected: false,
     },
   ],
-
+  Footer: {
+    name: "Github",
+    href: "https://github.com/nickdip/Grotto",
+  },
   Landing: {
     heading: {
       first: "GROTTO",
       second: "Providing a more sustainable Christmas",
     },
-    intro: "Help ensure Santa's home in the North Pole is saved from melting. GROTTO is an application designed by Santa's elves to help children get the perfect, substainable Christmas present.",
+    intro:
+      "Help ensure Santa's home in the North Pole is saved from melting. GROTTO is an application designed by Santa's elves to help children get the perfect, substainable Christmas present.",
   },
   XmasClock: {
     heading: {
