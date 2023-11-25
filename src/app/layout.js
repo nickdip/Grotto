@@ -1,8 +1,5 @@
-import { Inter } from "next/font/google";
+import { Footer, Header } from "@/components";
 import "./globals.css";
-import { Header } from "@/components";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Grotto",
@@ -12,15 +9,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="min-h-screen flex flex-col max-w-6xl mx-auto">
+        <Header />
         <div className="grow shrink-0">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-5xl h-full flex flex-col items-center justify-between">
-              <Header />
-              {children}
-            </div>
+          <div className="mx-auto max-w-9xl h-full flex flex-col items-center justify-between">
+            {children}
           </div>
         </div>
+        <Footer />
       </body>
     </html>
   );
