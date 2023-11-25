@@ -84,8 +84,6 @@ class childLetter {
 const child1 = new childLetter("I want a bicycle for christmas!");
 
 
-const child1 = new childLetter("I want a bike for christmas!")
-
 child1.getToys(child1.words)
 child1.getTypoToys()
 child1.showToys()
