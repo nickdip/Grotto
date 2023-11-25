@@ -2,7 +2,7 @@
     {
         "Name": "Teddy plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/61z+uFOG3AL._AC_SL1001_.jpg",
         "Price": 1.30,
         "Description": "This teddy is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -14,7 +14,7 @@
     {
         "Name": "Duck plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://i.ebayimg.com/images/g/CGMAAOSwmBhiCqVZ/s-l500.png",
         "Price": 1.59,
         "Description": "This duck is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -26,7 +26,7 @@
     {
         "Name": "Cat plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/71IKyVmcEkL._AC_SX679_.jpg",
         "Price": 1.90,
         "Description": "This cat is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -40,7 +40,7 @@
     {
         "Name": "Dinosaur plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://www.temptationgifts.com/media/catalog/product/cache/623a6c74e30aa11506d045198d97fecc/j/e/jellycat-fos2trex_1_.jpg",
         "Price": 1.20,
         "Description": "This dinosaur is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -53,7 +53,7 @@
     {
         "Name": "Cow plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/61mlwHyq4BL.jpg",
         "Price": 1.10,
         "Description": "This cow is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -67,7 +67,7 @@
     {
         "Name": "Chicken plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://i.etsystatic.com/37823615/r/il/a2d07a/4412534939/il_fullxfull.4412534939_a6am.jpg",
         "Price": 2.99,
         "Description": "This chicken is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -81,7 +81,7 @@
     {
         "Name": "Pig plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://cdn11.bigcommerce.com/s-29ytvisx/images/stencil/1280x1280/products/5586/22242/chick__34668.1599672654.jpg?c=2",
         "Price": 1.95,
         "Description": "This pig is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -96,7 +96,7 @@
     {
         "Name": "Giraffe plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://www.nhmshop.co.uk/media/catalog/product/cache/76cb435c7ac87e45f882b91c2955391d/g/i/giraffe1.jpg",
         "Price": 3.09,
         "Description": "This giraffe is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -108,7 +108,7 @@
     {
         "Name": "Fish plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://cdn.s7.shopdisney.eu/is/image/DisneyStoreES/412304239299?fmt=webp&qlt=70&wid=1304&hei=1304",
         "Price": 5.30,
         "Description": "This fish is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -120,7 +120,7 @@
     {
         "Name": "Shark plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/61leOkf2zCL._AC_UF894,1000_QL80_.jpg",
         "Price": 1.92,
         "Description": "This shark is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -132,7 +132,7 @@
     {
         "Name": "Turtle plush",
         "Category": "animals",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/81hVqKDAJnL._AC_UF894,1000_QL80_.jpg",
         "Price": 1.90,
         "Description": "This turtle is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "B Corp",
@@ -145,8 +145,8 @@
     {
         "Name": "Puzzle set",
         "Category": "games",
-        "Image link": 8.99,
-        "Price": "\u00a36.14",
+        "Image link": "https://m.media-amazon.com/images/I/714hY6V76wL._AC_UF894,1000_QL80_.jpg",
+        "Price": 6.14,
         "Description": "This puzzle is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
         "words": [
@@ -157,7 +157,7 @@
     {
         "Name": "Boardgame set",
         "Category": "games",
-        "Image link": "",
+        "Image link": "https://images.squarespace-cdn.com/content/v1/5b65d763fcf7fd7d0c65108e/1643582397420-NIGYRIMWYXFZGZ7WT8T7/Stardew+Valley+the+Board+Game.jpeg?format=2500w",
         "Price": 3.99,
         "Description": "This boardgame is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -167,23 +167,24 @@
         ]
     },
     {
-        "Name": "Cards set",
+        "Name": "Uno",
         "Category": "games",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/71nnUwT9HWL._AC_SY879_.jpg",
         "Price": 1.99,
-        "Description": "This cards is a fun and educational toy for kids, perfect for imaginative play and skill development.",
+        "Description": "This Uno game is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
         "words": [
             "cards",
-            "card"
+            "card",
+            "uno"
         ]
     },
     {
         "Name": "Chess set",
         "Category": "games",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/71nnUwT9HWL._AC_SY879_.jpg",
         "Price": 5.99,
-        "Description": "This chess is a fun and educational toy for kids, perfect for imaginative play and skill development.",
+        "Description": "This chess set is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
         "words": [
             "chess"
@@ -192,7 +193,7 @@
     {
         "Name": "Checkers set",
         "Category": "games",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/71DBJPcqx3L.jpg",
         "Price": 4.99,
         "Description": "This checkers is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -204,7 +205,7 @@
     {
         "Name": "Bowling set",
         "Category": "games",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/81PPdEEIkdL._AC_SX679_.jpg",
         "Price": 12.99,
         "Description": "This bowling is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -215,7 +216,7 @@
     {
         "Name": "Dominoes set",
         "Category": "games",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/81BCGzdJ-CL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "Price": 4.99,
         "Description": "This dominoes is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -227,7 +228,7 @@
     {
         "Name": "Puzzlebox set",
         "Category": "games",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/81BCGzdJ-CL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "Price": 5.99,
         "Description": "This puzzlebox is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "B Corp",
@@ -239,7 +240,7 @@
     {
         "Name": "Drum",
         "Category": "music",
-        "Image link": "",
+        "Image link": "https://shop.nspcc.org.uk/cdn/shop/files/61dz7HALHFL._SL1000_1296x.jpg?v=1690442292",
         "Price": 1.99,
         "Description": "This drum is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "B Corp",
@@ -251,7 +252,7 @@
     {
         "Name": "Guitar",
         "Category": "music",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/61i22i4CppL._AC_UF894,1000_QL80_.jpg",
         "Price": 19.99,
         "Description": "This guitar is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -263,7 +264,7 @@
     {
         "Name": "Rocket",
         "Category": "space",
-        "Image link": "",
+        "Image link": "https://www.jaqueslondon.co.uk/cdn/shop/products/Rapid-Rocket---92088_800x800.jpg?v=1651058264",
         "Price": 4.99,
         "Description": "This rocket is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -275,7 +276,7 @@
     {
         "Name": "Telescope",
         "Category": "space",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/61wlTeGklCL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "Price": 11.30,
         "Description": "This telescope is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -287,7 +288,7 @@
     {
         "Name": "Microscope",
         "Category": "space",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/61YymKyHMCL.jpgtra",
         "Price": 7.99,
         "Description": "This microscope is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -299,7 +300,7 @@
     {
         "Name": "Train",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://www.woodentoyshop.co.uk/media/catalog/product/cache/1/image/380x380/9df78eab33525d08d6e5fb8d27136e95/v/s/vspa.jpg",
         "Price": 1.90,
         "Description": "This train is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -311,19 +312,21 @@
     {
         "Name": "Ball",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/51UTI-Dkq8L.__AC_SY300_SX300_QL70_ML2_.jpg",
         "Price": 2.99,
         "Description": "This ball is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
         "words": [
             "ball",
-            "balls"
+            "balls",
+            "football",
+            "soccer"
         ]
     },
     {
         "Name": "Kite",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://www.mulberrybush.co.uk/images/thumbs/0011455_brookite-classic-bow-tail-kite_550.jpeg",
         "Price": 1.99,
         "Description": "This kite is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "B Corp",
@@ -335,7 +338,7 @@
     {
         "Name": "Rope",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/810lGfhiVrL._AC_SX679_.jpg",
         "Price": 1.99,
         "Description": "This rope is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -347,8 +350,8 @@
     {
         "Name": "Playhouse",
         "Category": "outside",
-        "Image link": "",
-        "Price": 7.99,
+        "Image link": "https://m.media-amazon.com/images/I/81xmm0YAj-L.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "Price": 72.99,
         "Description": "This playhouse is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
         "words": [
@@ -359,7 +362,7 @@
     {
         "Name": "Yo-yo",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://upload.wikimedia.org/wikipedia/commons/2/24/Yo-Yo-Plastic-Toy-Green.jpg",
         "Price": 0.90,
         "Description": "This yo-yo is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -371,7 +374,7 @@
     {
         "Name": "Car",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://i.ebayimg.com/images/g/tPwAAOSwiglcq1FU/s-l1200.webp",
         "Price": 14.90,
         "Description": "This car is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -388,7 +391,7 @@
     {
         "Name": "Bicycle",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/61nUR9v77OL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "Price": 50.99,
         "Description": "This bicycle is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -403,7 +406,7 @@
     {
         "Name": "Skateboard",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/81rmOGQoDkL._AC_SX679_.jpg",
         "Price": 1.20,
         "Description": "This skateboard is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -415,7 +418,7 @@
     {
         "Name": "Watergun",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/71a2tmThk4S.__AC_SX300_SY300_QL70_ML2_.jpg",
         "Price": 1.20,
         "Description": "This watergun is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -430,7 +433,7 @@
     {
         "Name": "Frisbee",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/81PhORW0VWL._AC_UF894,1000_QL80_.jpg",
         "Price": 2.15,
         "Description": "This frisbee is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "B Corp",
@@ -442,7 +445,7 @@
     {
         "Name": "Soldiers",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/61woAaQJncL._AC_SL1200_.jpg",
         "Price": 1.20,
         "Description": "This soldiers is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -453,19 +456,21 @@
     {
         "Name": "Walkie",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/71-Pnuy3lrL._AC_SX679_.jpg",
         "Price": 2.99,
         "Description": "This walkie is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
         "words": [
             "walkie",
-            "walkies"
+            "walkies",
+            "mario",
+            "luigi"
         ]
     },
     {
         "Name": "Wings",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/81Ox6VJllmS._AC_SX679_.jpg",
         "Price": 2.30,
         "Description": "This wings is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "B Corp",
@@ -477,7 +482,7 @@
     {
         "Name": "Sword",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/41XCii6loKL.__AC_SX300_SY300_QL70_ML2_.jpg",
         "Price": 1.99,
         "Description": "This sword is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -491,7 +496,7 @@
     {
         "Name": "Dress",
         "Category": "clothes",
-        "Image link": "",
+        "Image link": "https://img.fruugo.com/product/4/46/414564464_max.jpg",
         "Price": 1.99,
         "Description": "This dress is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -503,8 +508,8 @@
     {
         "Name": "Hat",
         "Category": 1.29,
-        "Image link": "",
-        "Price": "\u00a38.81",
+        "Image link": "https://m.media-amazon.com/images/I/711J+lFeK8S._AC_UY580_.jpg",
+        "Price": 2.49,
         "Description": "This hat is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "B Corp",
         "words": [
@@ -515,7 +520,7 @@
     {
         "Name": "Cape",
         "Category": "clothes",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/61fTdwwLUjL._AC_SX679_.jpg",
         "Price": 1.99,
         "Description": "This cape is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -526,7 +531,7 @@
     {
         "Name": "Beanbag",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://files.ekmcdn.com/superfunstuffc/images/nylon-bean-bag-12.7cm-100-grams-1-8317-p.png",
         "Price": 1.20,
         "Description": "This beanbag is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -538,7 +543,7 @@
     {
         "Name": "Slinky",
         "Category": "outside",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/71L7old7dPL.__AC_SY300_SX300_QL70_ML2_.jpg",
         "Price": 2.99,
         "Description": "This slinky is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -550,20 +555,21 @@
     {
         "Name": "Play-doh",
         "Category": "creative",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/71G2AssY+mL.jpg",
         "Price": 4.99,
         "Description": "This play-doh is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
         "words": [
             "play-doh",
             "play-dohs",
-            "playdoh"
+            "playdoh",
+            "playdoug"
         ]
     },
     {
         "Name": "Lego",
         "Category": "creative",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/81BT4absZ5L._AC_UF894,1000_QL80_.jpg",
         "Price": 12.30,
         "Description": "This lego is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -577,7 +583,7 @@
     {
         "Name": "Crayons",
         "Category": "creative",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/81Df7Y+-V4L._AC_SX679_.jpg",
         "Price": 2.30,
         "Description": "This crayons is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "recycled",
@@ -590,7 +596,7 @@
     {
         "Name": "Puppet",
         "Category": "creative",
-        "Image link": "",
+        "Image link": "https://the-olive-branch.co.uk/wp-content/uploads/2020/05/My-First-Puppets-Lion.jpg",
         "Price": 0.90,
         "Description": "This puppet is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
@@ -602,7 +608,7 @@
     {
         "Name": "Book",
         "Category": "creative",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/41cEjA1XdbL._SX342_SY445_.jpg",
         "Price": 3.99,
         "Description": "This book is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "zero plastic",
@@ -615,34 +621,37 @@
     {
         "Name": "Dollhouse",
         "Category": "creative",
-        "Image link": "",
-        "Price": 2.93,
+        "Image link": "https://m.media-amazon.com/images/I/71moDQ0zNAL.__AC_SX300_SY300_QL70_ML2_.jpg",
+        "Price": 22.95,
         "Description": "This dollhouse is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "B Corp",
         "words": [
             "dollhouse",
             "dollhouses",
-            "doll"
+            "doll",
+            "house"
         ]
     },
     {
-        "Name": "Magicset",
+        "Name": "Magic Set",
         "Category": "creative",
-        "Image link": "",
+        "Image link": "https://m.media-amazon.com/images/I/81mF9IYCyuL._AC_UF894,1000_QL80_.jpg",
         "Price": 6.99,
-        "Description": "This magicset is a fun and educational toy for kids, perfect for imaginative play and skill development.",
+        "Description": "This magic set is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
         "words": [
             "magicset",
             "magicsets",
-            "magic"
+            "magic",
+            "trick",
+            "magician"
         ]
     },
 
     {
         "Name": "Baby",
         "Category": "dolls",
-        "Image link": "",
+        "Image link": "https://wowowtoys.co.uk/cdn/shop/files/1_6f1abc3f-fa27-42ee-bd56-15eff0b21177_800x.jpg?v=1685025766",
         "Price": 1.92,
         "Description": "This is a description of the item",
         "Sustainability": "zero plastic",
@@ -654,7 +663,7 @@
     {
         "Name": "Barbie",
         "Category": "dolls",
-        "Image link": "",
+        "Image link": "https://shopping.mattel.com/cdn/shop/products/tc8y9lmzqzpse2ndxlrr_2ce46d04-1ea5-4a3c-a023-2a68824db15a.jpg?v=1689329727",
         "Price": 2.19,
         "Description": "This barbie is a fun and educational toy for kids, perfect for imaginative play and skill development.",
         "Sustainability": "second hand",
