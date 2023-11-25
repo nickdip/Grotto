@@ -17,11 +17,10 @@ export const data = {
 
   Landing: {
     heading: {
-      first: "Lorem ipsum dolor",
-      second: "Lorem ipsum dolor",
+      first: "GROTTO",
+      second: "Providing a more sustainable Christmas",
     },
-    intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+    intro: "Help ensure Santa's home in the North Pole is saved from melting. GROTTO is an application designed by Santa's elves to help children get the perfect, substainable Christmas present.",
   },
   XmasClock: {
     heading: {
