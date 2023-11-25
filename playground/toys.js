@@ -1,12 +1,10 @@
-const toyData = require('./toyData.js');
 const natural = require('natural')
 const ignoredWords = require('./ignoreWords.js')
 
 
-function getResults(str) {
+function getResults(toyData, str) {
 
         const resultObj = {"faveCategories": {}}
-
         const words = findKeyWords(new natural.WordTokenizer().tokenize(str))
 
         const seen = [] // seen toys
@@ -98,8 +96,6 @@ function findKeyWords(wordsArray) {
 
     }
 
-
-const child1 = getResults("I want nothing for christmas")
 
 export default getResults
 
