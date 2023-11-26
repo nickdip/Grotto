@@ -1,35 +1,40 @@
-const natural = require("natural");
-const ignoredWords = require("./ignoreWords.js");
+// const natural = require("natural");
+const ignoredWords = require("./ignoreWords.js")
 
 function getResults(toyData, str) {
-  const resultObj = { faveCategories: {} };
-  const words = findKeyWords(new natural.WordTokenizer().tokenize(str));
+  const resultObj = { faveCategories: {} }
+
+  console.log(str.split(" "))
+
+  const words = str.split(" ").map((word) => word.replace(/[^a-z]/gi, '').toLowerCase())
+
+  console.log(words)
 
   const seen = []; // seen toys
 
-  const getTypoToys = () => {
-    const secondaryMatches = [];
+//   const getTypoToys = () => {
+//     const secondaryMatches = [];
 
-    let allWords = [];
+//     let allWords = [];
 
-    for (let toy in toyData) {
-      for (let word in toyData[toy].words) {
-        allWords.push(toyData[toy].words[word]);
-      }
-    }
+//     for (let toy in toyData) {
+//       for (let word in toyData[toy].words) {
+//         allWords.push(toyData[toy].words[word]);
+//       }
+//     }
 
-    const spellcheck = new natural.Spellcheck(allWords);
-    words.forEach((wordInText) => {
-      spellcheck.getCorrections(wordInText, 1).forEach((correction) => {
-        if (
-          !(correction === wordInText && secondaryMatches.includes(correction))
-        )
-          secondaryMatches.push(correction);
-      });
-    });
+//     const spellcheck = new natural.Spellcheck(allWords);
+//     words.forEach((wordInText) => {
+//       spellcheck.getCorrections(wordInText, 1).forEach((correction) => {
+//         if (
+//           !(correction === wordInText && secondaryMatches.includes(correction))
+//         )
+//           secondaryMatches.push(correction);
+//       });
+//     });
 
-    return secondaryMatches;
-  };
+//     return secondaryMatches;
+//   };
 
   const getMatches = (rank, words) => {
     const matches = [];
@@ -57,13 +62,13 @@ function getResults(toyData, str) {
   };
 
   getMatches("Primary", words);
-  getMatches("Secondary", getTypoToys());
+//   getMatches("Secondary", getTypoToys());
 
   const finalResults = []; // final results (show up to 8)
 
   for (let i = 0; i < 4; i++) {
     if (resultObj.Primary[i]) finalResults.push(resultObj.Primary[i]);
-    if (resultObj.Secondary[i]) finalResults.push(resultObj.Secondary[i]);
+    // if (resultObj.Secondary[i]) finalResults.push(resultObj.Secondary[i]);
   }
 
   if (finalResults.length < 4) {
