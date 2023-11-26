@@ -1,5 +1,6 @@
 import { Footer, Header } from "@/components";
 import "./globals.css";
+import { UserProvider } from "../contexts/UserContext"
 
 export const metadata = {
   title: "Grotto",
@@ -8,6 +9,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
+    <UserProvider>
     <html lang="en">
       <body className="min-h-screen flex flex-col max-w-6xl mx-auto">
         <Header />
@@ -19,5 +21,7 @@ export default function RootLayout({ children }) {
         <Footer />
       </body>
     </html>
+    </UserProvider>
+    
   );
 }

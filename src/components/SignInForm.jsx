@@ -1,14 +1,25 @@
 "use client";
-import { useState } from "react";
-import { data } from "@/data";
+import { useState, useContext } from "react";
+import { data } from "@/data"
+import UserContext from "@/contexts/UserContext"
+
 
 export const SignInForm = () => {
   const [errorMsg, setErrorMsg] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  console.log(UserContext)
+
+  const { loginUser } = useContext(UserContext)
+
+  console.log(loginUser, "loginUser")
+
+
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+    loginUser(email, password)
   };
 
   const onChangeEmail = (e) => {
@@ -24,7 +35,7 @@ export const SignInForm = () => {
       {errorMsg && <p>{errorMsg}</p>}
       <div className="w-full">
         <label
-          htmlFor="email"
+          htmlFor="username"
           className="block text-sm font-medium text-gray-700"
         >
           {data.SignIn.input.first}

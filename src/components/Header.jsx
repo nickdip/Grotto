@@ -28,8 +28,8 @@ export const Header = () => (
                 <Logo />
                 <Navbar />
               </div>
-              <div className="absolute inset-y-0 top-2 right-1 sm:right-0 sm:ml-6 sm:flex sm:items-center">
-                <SignInButton />
+              <div className="absolute inset-y-0 top-2 right-1 sm:right-0 sm:ml-6 sm:flex sm:items-center text-sm">
+                <p>Logged in Dummy123</p>
               </div>
             </div>
           </div>
