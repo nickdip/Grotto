@@ -1,5 +1,5 @@
-const fs = require("fs");
+import fs from "fs";
 
-const toyData = JSON.parse(fs.readFileSync("./data.json", "utf8"));
+const toyData = JSON.parse(fs.readFileSync("../playground/data.json"))
 
-module.exports = toyData;
+export default toyData
