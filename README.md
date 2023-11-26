@@ -3,6 +3,8 @@ GROTTO
 
 ## Introduction
 
+Live Demo: https://grotto-psi.vercel.app/
+
 This is project for the Northcoders Hackathon 2023.
 
 Theme: Green (christmas/sustainability)
@@ -61,4 +63,4 @@ Four items will always be suggested. The fourth item will be randomly selected b
 1. To commericalise the application, this would likely be integration in the existing shopping platforms rather than a stand alone shop
 2. There is future potential to use AI for the text analysing
 3. Currently, a parent can be only have one child. This will be expanded in the future 
-4. Logging in?
+4. Add the ability to log in
