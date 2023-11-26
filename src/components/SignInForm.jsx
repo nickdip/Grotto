@@ -1,14 +1,17 @@
 "use client";
 import { useState } from "react";
-import { data } from "@/data";
+import { data } from "@/data"
+
 
 export const SignInForm = () => {
-  const [errorMsg, setErrorMsg] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+    loginUser(email, password)
   };
 
   const onChangeEmail = (e) => {
@@ -21,10 +24,9 @@ export const SignInForm = () => {
 
   return (
     <form className="space-y-6" onSubmit={handleSubmit}>
-      {errorMsg && <p>{errorMsg}</p>}
       <div className="w-full">
         <label
-          htmlFor="email"
+          htmlFor="username"
           className="block text-sm font-medium text-gray-700"
         >
           {data.SignIn.input.first}

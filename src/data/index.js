@@ -8,8 +8,14 @@ export const data = {
       isSelected: false,
     },
     {
-      name: "Services",
-      href: "/services",
+      name: "Child View",
+      href: "/letter",
+      isProtected: false,
+      isSelected: false,
+    },
+    {
+      name: "Parent View",
+      href: "/grownup",
       isProtected: false,
       isSelected: false,
     },
