@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import getResults from "../../../../playground/toys";
-import data from "../../../../playground/data.json";
+import { useState } from "react";
+import getResults from "../../playground/toys";
+import data from "../../playground/data.json";
 
-export default function LetterTemplate() {
+export const Letter = () => {
   const [text, setText] = useState("");
 
   const [suggestedGifts, setSuggestedGifts] = useState([]);
@@ -22,29 +22,28 @@ export default function LetterTemplate() {
   };
 
   return (
-    <div className="p-5 border-4 border-green-600 text-center shadow-lg rounded-lg m-5">
+    <div className="w-full mt-8 pl-10 border-4 border-green-600 text-center shadow-lg rounded-lg">
       <Image
         className="object-contain inset-0 z-0 opacity-25"
         src="/christmas-tree.png"
         alt="christmas-tree"
-        width={50}
+        width={80}
         height={55}
       />
       <div className="overlay-content relative z-10 p-4">
         <form onSubmit={(e) => handleSubmit(e)}>
           <textarea
             placeholder="Dear Santa..."
-            rows={10}
-            cols={15}
-            className="p-1"
+            rows={6}
+            className="p-1 w-full h-full border-0 overflow-auto shadow-0 outline-0 text-xl"
             onChange={(e) => setText(e.target.value)}
           />
-          <button>
+          <button aria-label="send-button">
             <Image
               className="object-contain"
               src="/send-button.png"
               alt="send-button"
-              width={70}
+              width={180}
               height={55}
             />
           </button>
@@ -52,4 +51,4 @@ export default function LetterTemplate() {
       </div>
     </div>
   );
-}
+};
