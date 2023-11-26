@@ -4,11 +4,10 @@ const ignoredWords = require("./ignoreWords.js")
 function getResults(toyData, str) {
   const resultObj = { faveCategories: {} }
 
-  console.log(str.split(" "))
+  console.log(toyData)
+
 
   const words = str.split(" ").map((word) => word.replace(/[^a-z]/gi, '').toLowerCase())
-
-  console.log(words)
 
   const seen = []; // seen toys
 
@@ -40,19 +39,24 @@ function getResults(toyData, str) {
     const matches = [];
 
     words.forEach((word) => {
+
+      console.log(word, "word")
       if (ignoredWords.includes(word)) return;
 
       toyData.forEach((toy) => {
-        if (word === toy.Category)
-          resultObj.faveCategories[toy.Category] =
-            resultObj.faveCategories[toy.Category] + 1 || 1;
+
+        console.log(seen, "seen")
+
+        if (word === toy.category)
+          resultObj.faveCategories[toy.category] =
+            resultObj.faveCategories[toy.category] + 1 || 1;
 
         if (toy.words.includes(word)) {
-          resultObj.faveCategories[toy.Category] =
-            resultObj.faveCategories[toy.Category] + 1 || 1;
-          if (!seen.includes(toy)) {
+          resultObj.faveCategories[toy.category] =
+            resultObj.faveCategories[toy.category] + 1 || 1;
+          if (!seen.includes(toy.id)) {
             matches.push(toy);
-            seen.push(toy);
+            seen.push(toy.id);
           }
         }
       });
@@ -61,14 +65,16 @@ function getResults(toyData, str) {
     resultObj[rank] = matches;
   };
 
-  getMatches("Primary", words);
-//   getMatches("Secondary", getTypoToys());
+  getMatches("Primary", words)
+
+  toyData = toyData.filter((toy) => !seen.includes(toy.id))
+
 
   const finalResults = []; // final results (show up to 8)
 
   for (let i = 0; i < 4; i++) {
     if (resultObj.Primary[i]) finalResults.push(resultObj.Primary[i]);
-    // if (resultObj.Secondary[i]) finalResults.push(resultObj.Secondary[i]);
+
   }
 
   if (finalResults.length < 4) {

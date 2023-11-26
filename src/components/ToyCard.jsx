@@ -3,6 +3,10 @@
 import "../app/toys/style.css";
 
 export const ToyCard = ({ toy }) => {
+
+  toy.price = toy.price.toString()
+  if (toy.price.length === 3) toy.price += "0"
+
   return (
     <div className="toy-card">
       <h2>{toy.name}</h2>
