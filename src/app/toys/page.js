@@ -1,5 +1,10 @@
-import supabase from "../config/supabaseClient";
+"use client";
+
+import supabase from "../../config/supabaseClient";
 import { useEffect, useState } from "react";
+
+//components
+import { ToyCard } from "@/components";
 
 const Toys = () => {
   // console.log(supabase);
@@ -31,9 +36,13 @@ const Toys = () => {
         {fetchError && <p>{fetchError}</p>}
         {toys && (
           <div className="toys">
-            {toys.map((toy) => (
-              <p key={toy.id}>{toy.name}</p>
-            ))}
+            {/* order-by buttons */}
+            <div className="toy-grid">
+              {toys.map((toy) => (
+                <p>{toy.name}</p>
+                // <ToyCard key={toy.id} toy={toy} />
+              ))}
+            </div>
           </div>
         )}
       </div>
