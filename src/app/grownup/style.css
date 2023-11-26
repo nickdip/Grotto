@@ -1,0 +1,15 @@
+body {
+  margin: 0 auto;
+}
+
+.finished-letter {
+  border: 4px solid green;
+  border-radius: 5px;
+  height: 500px;
+  width: 300px;
+  box-shadow: 5px 5px 15px lightgrey;
+}
+
+h1 {
+  margin: 3rem 0;
+}
