@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 //components
 import { ToyCard } from "../../components/ToyCard";
 
+//style
+import "./style.css";
+
 const Toys = () => {
   // console.log(supabase);
 
