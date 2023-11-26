@@ -5,6 +5,7 @@ import "./style.css";
 //style
 //components
 import { FinishedLetter } from "../../components/FinishedLetter";
+import { SuggestedToys } from "@/components/SuggestedToys";
 const GrownUp = () => {
   return (
     <div className="parent-page">
@@ -12,7 +13,9 @@ const GrownUp = () => {
         <h1>Hello user</h1>
         <FinishedLetter />
       </div>
-      <div>{/* //suggested toys */}</div>
+      <div>
+        <SuggestedToys />
+      </div>
     </div>
   );
 };
