@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { data } from "@/data";
-import DbPractice from "./DbPractice";
 
 export default function Home() {
   return (
@@ -20,7 +19,6 @@ export default function Home() {
         <p className="mt-8 text-lg text-left leading-8 text-gray-500 sm:text-xl lg:text-2xl">
           {data.Landing.intro}
         </p>
-        <DbPractice />
       </div>
       <div className="bg-transparent pt-4">
         <Image

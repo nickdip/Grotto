@@ -1,7 +1,7 @@
-import supabase from "../../config/supabaseClient";
+import supabase from "../config/supabaseClient";
 import { useEffect, useState } from "react";
 
-const DbPractice = () => {
+const Toys = () => {
   // console.log(supabase);
 
   const [fetchError, setFetchError] = useState(null);
@@ -26,7 +26,7 @@ const DbPractice = () => {
   }
 
   return (
-    <div className="page dbpractice">
+    <div className="page toys">
       <div>
         {fetchError && <p>{fetchError}</p>}
         {toys && (
@@ -41,4 +41,4 @@ const DbPractice = () => {
   );
 };
 
-export default DbPractice;
+export default Toys;
