@@ -1,15 +1,13 @@
 "use client";
 
-const ToyCard = ({ toy }) => {
+export const ToyCard = ({ toy }) => {
   return (
     <div className="toy-card">
       <h3>{toy.name}</h3>
-      <img src={toy.imgage_link}></img>
+      <img src={toy.image_link}></img>
       <p>{toy.description}</p>
       <p>{toy.price}</p>
       <p>Sustainable choice: {toy.sustainability}</p>
     </div>
   );
 };
-
-export default ToyCard;
