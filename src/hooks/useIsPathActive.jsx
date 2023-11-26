@@ -6,9 +6,9 @@ export const useIsPathActive = () => {
   const pathname = usePathname();
 
   const [isPathActive, setIsPathActive] = useState({
-    home: "",
-    xmasClock: "",
-    services: "",
+    home: true,
+    xmasClock: false,
+    services: false,
   });
 
   useEffect(() => {

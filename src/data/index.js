@@ -33,4 +33,13 @@ export const data = {
     },
     button: "Grotto now",
   },
+  SignIn: {
+    heading: "Sing in",
+    subheading: "to your account",
+    button: "Sign in",
+    input: {
+      first: "Email address",
+      second: "Password",
+    },
+  },
 };
