@@ -1,0 +1,36 @@
+.toy-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.toy-card {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  position: relative;
+}
+
+.toy-card img {
+  height: 50%;
+  width: 60%;
+}
+
+.toy-card h2,
+img {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.toy-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .toy-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
