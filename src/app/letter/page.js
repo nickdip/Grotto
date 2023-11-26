@@ -1,11 +1,5 @@
-import Santa from "./components/santa";
-import LetterTemplate from "./components/letter";
+import { Letter } from "@/components";
 
-export default function Letter() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Santa />
-      <LetterTemplate />
-    </main>
-  );
+export default function LetterP() {
+  return <Letter />;
 }
