@@ -1,17 +1,11 @@
 "use client";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { data } from "@/data"
 
 
 export const SignInForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  console.log(UserContext)
-
-  const { loginUser } = useContext(UserContext)
-
-  console.log(loginUser, "loginUser")
 
 
 
