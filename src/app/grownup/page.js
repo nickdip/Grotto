@@ -29,6 +29,9 @@ const GrownUp = () => {
     }
   }
 
+  //fetch suggested toys
+  //fetch letter
+
   return (
     <div className="parent-page">
       <div>
